@@ -1,0 +1,205 @@
+*command-list.txt*
+
+                VIM REFERENCE MANUAL    by Vinh Tran
+
+A plugin to define different group of commands and display them when needed.
+==============================================================================
+CONTENTS                                                      *command-list*
+
+
+    1) Intro........................................|CommandListIntro|
+    2) Functionality................................|CommandListFunctionality|
+    3) Enabling Command-list........................|CommandListExample|
+    4) List Item....................................|CommandListMenuItem|
+    5) List.........................................|CommandListMenu|
+    6) Author.......................................|SpeckyAuthor|
+
+==============================================================================
+1. INTRO                                                  *CommandListIntro*
+
+Command-list help you define a list of related command, assign a shortcut
+to the list. Once invoke the list will be displayed with the item(command)
+for you to choose.
+
+The plugin is written in ruby so your vim need to have +ruby supported.
+To test if you have +ruby type :echo has('ruby'), if the value return is 1,
+you vim has ruby supported.
+
+
+==============================================================================
+2. FUNCTIONALITY                                  *CommandListFunctionality*
+
+let say you define a couple of jump shortcut in you vim.
+<LEADER>jf to jump to a file
+<LEADER>jt to jump to a tag
+<LEADER>jw to jump to a website url
+
+would it be nice if, in addition to these shortcuts, you can type <LEADER>j
+ and a list will be display and you can select either f, t or w
+(for file, tag and website respectively) to execute you desired function.
+Command-list help you do this.
+
+==============================================================================
+3. ENABLING COMMAND LIST                                *CommandListExample*
+
+cd (change directory) in to your vim directory and run unzip it. Note:
+
+    Command list won't do -anything- for you at this state ~
+    read on to how to define a list!! ~
+
+plugin/command-list.vim expects plugin/command-list.rb where you will define
+all your command lists.
+
+I have include a sample file for your reference plugin/command-list.rb.sample
+
+Lets create a very simple list. open a new file in your vim plugin directory
+plugin/command-list.rb and put the following content in:
+
+
+CommandList::register_list(
+  :name  => 'Test List',
+  :map   =>'sl',
+  :items => [
+    {
+      :function    => '10G',
+      :map         => 't',
+      :text        => 'jump to line [t]ten',
+    },
+    {
+      :function    => ':split',
+      :map         => 's',
+      :text        => '[s]plit the screen to two',
+    }
+  ]
+)
+
+You're just have a list!!!
+save your file, quit vim and open it a gain.
+now in command mode type sl, that is our shortcut to display the command list
+you should see a list display with 2 menu items. type s and the list will disapear
+and your window will be splited.
+
+Now add the 'shift' block command to your list
+
+CommandList::register_list(
+  :name  => 'Test List',
+  :map   =>'sl',
+  :items => [
+    {
+      :function    => '10G',
+      :map         => 't',
+      :text        => 'jump to line [t]ten'
+    },
+    {
+      :function    => ':split',
+      :map         => 's',
+      :text        => '[s]plit the screen to two'
+    },
+    {
+      :function    => '>',
+      :map         => 'sr',
+      :text        => '[s]hift [r]ight',
+      :visual_mode => true
+    }
+  ]
+)
+
+source your command-list.vim or restart vim.
+notice that the new command item has :visual_mode => true
+this means that the command will works on visual mode
+
+now select a block of text
+type sl to display the list
+type sr ,that block of text should be shifted right
+
+==============================================================================
+4. LIST ITEM                                            *CommandListExample*
+
+*Define function*
+
+1. a function, in that case it shoul be some thing like this :function => 'MyFunction()',
+when command list call it, it will be the same as you typing :call MyFunction(). Note the () is
+important as it tell command-list that this is a function.
+
+2. a command, which you normally call by type : following by the command line. eg. :split
+when command list execute a command, it will call exactly like that :command, a command starts
+with a colon. :function => ':split'
+
+3. a shortcut, in vim you know you can type 10G to jump to line number 10. you can tell
+command line to execute the shortcut by give using :function => 'shortcut', the shortcut
+should not start with : or it will be confused with a function. also, it should be exactly
+the same text as when you defining a map. For example a pipe (|) should be define as
+:function => '\|' not '|'
+
+*:text* is the text to be displayed in the command list, the character inside [] will be highligh
+this is to be use for shortcut characters
+
+*:map* is the shortcut to execute this command when the list is open
+
+*:visual_mode* set this value to true if your command works on visual mode
+
+==============================================================================
+5. LIST                                                 *CommandListExample*
+
+There are a couple of options you can specify when you define new list
+
+*:name* is the name of the list
+
+*:map* the key map to display the list
+
+*:map_item_with_list* this configuration is interesting, if you set this to true
+what happen is, for each list item
+
+command list will create map which is a concat of the list map key and the item map key
+
+this is better explained by an example
+
+if you define a list as followed:
+
+CommandList::register_list(
+  :name               => 'Test List',
+  :map                => 'sl',
+  :map_item_with_list => true,
+  :items => [
+    {
+      :function    => '10G',
+      :map         => 't',
+      :text        => 'jump to line [t]ten'
+    }
+  ]
+)
+
+this will create the following global map
+
+sl  -> display the list
+slt -> jump to line 10
+
+so if you slt you can skip the list and jump directly to line 10
+if you dont remember the shortcut exactly, you can just type sl do diplay the list
+then choose your command
+
+If you set up the map for the list, you can use the map shortcut to display
+the shortcut or you can do it manually in your .vimrc as follow
+
+map mapkey :ruby CommandList::display_command_list('Jump')<CR>
+
+you can add multiple list into a single display by adding it to the parameters
+of the display_command_list call. For example:
+
+map mapkey :ruby CommandList::display_command_list('Jump', 'Format')<CR>
+
+If no parameters is given, all the list will be displayed
+
+There is a sample file: plugin/command-list.rb.sample for your reference.
+
+==============================================================================
+6. AUTHOR                                                 *CommandListAuthor*
+
+Command-list was written by Vinh Tran.
+
+  qvinh.tran@gmail.com
+
+
+
+
+
