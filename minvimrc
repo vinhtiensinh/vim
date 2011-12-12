@@ -16,6 +16,9 @@ set title
 set nocompatible
 set number
 
+set mouse=a
+set selectmode=mouse
+
 set splitright
 
 set fillchars=vert:\ 
