@@ -120,6 +120,27 @@ let g:CommandTSelectPrevMap = "<S-Tab>"
 let g:CommandTAcceptSelectionSplitMap = '<S-Space>'
 let g:CommandTAcceptSelectionVSplitMap = '<S-CR>'
 
+" transparent
+let g:transparency = 0
+function! ToggleTransparency()
+  if g:transparency == 0
+    set transparency=25
+    let g:transparency = 25
+  else
+    set transparency=0
+    let g:transparency=0
+  endif
+endfunction
+
+function! CommandW()
+  if tabpagenr('$') == 1
+    call feedkeys(":bd\<CR>")
+  else
+    call feedkeys(":tabclose\<CR>")
+  endif
+endfunction
+
+
 " taglist
 so $HOME/.vim/plugin/taglist.vim
 :TlistAddFiles ./tags
@@ -134,6 +155,12 @@ let Tlist_Show_One_File = 1
 let g:Tlist_GainFocus_On_ToggleOpen = 0
 "let Tlist_Close_On_Select = 1
 let Tlist_Use_Right_Window = 1
+
+"use sign for checking syntax
+"let g:syntastic_auto_loc_list = 1
+let g:syntastic_enable_signs=1
+let g:syntastic_quiet_warnings=1
+let g:syntastic_disabled_filetypes = ['cucumber']
 
 silent! so ~/.vim/mapvimrc
 silent! so ./.localvimrc
