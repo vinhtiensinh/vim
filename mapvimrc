@@ -103,6 +103,18 @@ map <LEADER>W :TMiniBufExplorerCloseAllOthers<CR>
 map <C-1> :call ToggleBetweenNERDTreeAndBufExplorer()<CR>
 map <C-!> :call CloseNERDTreeAndBufExplorer()<CR>
 
+" moving between window
+nmap <C-h> <C-w>h
+nmap <C-j> <C-w>j
+nmap <C-k> <C-w>k
+nmap <C-l> <C-w>l
+
+" resize
+map <C->> 5<C-w><
+map <C-<> 5<C-w>>
+map <C-_> 5<C-w>-
+map <C-+> 5<C-w>+
+
 
 " Macvim mapping
 if has("gui_macvim")
@@ -131,26 +143,11 @@ if has("gui_macvim")
   imap <D-[> <ESC>lvBxi
   imap <D-]> <ESC>lvExi
   
-  "navigating between split windows
-  map <D-]> <C-w>w
-  map <D-[> <C-w>p
-  map <D-H> <C-w>h
-  map <D-J> <C-w>j
-  map <D-K> <C-w>k
-  map <D-L> <C-w>l
-  map <D-<> 5<C-w><
-  map <D->> 5<C-w>>
-  map <D-_> 5<C-w>-
-  map <D-+> 5<C-w>+
   
   "redo with D-2 (@ for easily remember)
   map <D-2> <C-r>
   
   "map scrolling
-  map <D-j> <C-d>
-  map <D-k> <C-u>
-  map <D-u> <C-e>
-  map <D-i> <C-y>
   map <D-h> g^
   map <D-l> g$
   map <D-P> $a<Space><ESC>p
