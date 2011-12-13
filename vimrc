@@ -142,7 +142,7 @@ endfunction
 
 
 " taglist
-so $HOME/.vim/plugin/taglist.vim
+so $HOME/.vim/bundle/taglist/plugin/taglist.vim
 :TlistAddFiles ./tags
 let Tlist_Ctags_Cmd = '/opt/local/bin/ctags'
 let Tlist_Exit_OnlyWindow = 1
