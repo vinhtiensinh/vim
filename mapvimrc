@@ -147,13 +147,16 @@ if has("gui_macvim")
   "map scrolling
   map <D-h> g^
   map <D-l> g$
+  map <D-j> <C-d>
+  map <D-k> <C-u>
+
   map <D-P> $a<Space><ESC>p
   map <D-3> :call ToggleTagList()<CR>
-  nmap <MiddleMouse> :call OpenFilesFromClipboard('e')<CR>
   nmap <ESC> :w<CR>
   map <D-@> :call ToggleTransparency()<CR>
   imap <D-@> <ESC>:call ToggleTransparency()<CR>a
-  nmap <RIGHTMOUSE> :call ToggleBetweenNERDTreeAndBufExplorer()<CR>
+  nmap <RightMouse> :call ToggleBetweenNERDTreeAndBufExplorer()<CR>
+  nmap <MiddleMouse> :call OpenFilesFromClipboard('e')<CR>
   map <D-!> :call CloseNERDTreeAndBufExplorer()<CR>
   map <D-1> :call ToggleBetweenNERDTreeAndBufExplorer()<CR>
 endif
