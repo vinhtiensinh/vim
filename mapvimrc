@@ -4,9 +4,12 @@ map g<Tab> g<S-Space><C-w>T
 map g<S-Space> :split<CR>g<C-]>
 map g<S-CR> :vsplit<CR>g<C-]>
 
+map gh h^
+map gl h$
+
 map ga :Alternate<CR>
 
-map <LEADER>3 \c<SPACE>
+map <LEADER>3 \\<SPACE>
 
 "hightlight extra space
 highlight ExtraWhitespace ctermbg=DarkGrey guibg=DarkGrey
