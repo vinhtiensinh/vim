@@ -97,28 +97,6 @@ CommandList::register_list(
 )
 
 CommandList::register_list(
-  :name  => 'Jump',
-  :map_item_with_list => true,
-  :items => [
-    {
-      :function    => '^gf',
-      :map         => 'gl',
-      :text        => 'file on the current [l]ine',
-    },
-    {
-      :function    => 'OpenGizmoPage("e")',
-      :map         => 'gz',
-      :text        => 'gi[z]mo page',
-    },
-    {
-      :function    => ':ruby SmartJumper.jump("e")',
-      :map         => 'gp',
-      :text        => '[p]erl class',
-    }
-  ]
-)
-
-CommandList::register_list(
   :name  => 'Search',
   :map   =>'<LEADER>s',
   :map_item_with_list => true,
