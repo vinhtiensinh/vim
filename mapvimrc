@@ -1,4 +1,3 @@
-map  <LEADER>v <C-v>
 map g<Space> g<C-]>
 map g<Tab> g<S-Space><C-w>T
 map g<S-Space> :split<CR>g<C-]>
@@ -35,14 +34,15 @@ map j gj
 map k gk
 
 "enter new line without insert mode
-nmap <Space><CR> i<CR><ESC>
+nmap <CR> i<CR><ESC>
+nmap <BS> X
 
 "edit mode keymap
 imap <C-SPACE> <C-x><C-o>
 imap <S-Tab> <C-o>
-imap <ESC> <ESC>:w<CR>
-vmap <ESC> <ESC>:w<CR>
-smap <ESC> <ESC>:w<CR>
+imap <silent> <ESC> <ESC>:w<CR>
+vmap <silent> <ESC> <ESC>:w<CR>
+smap <silent> <ESC> <ESC>:w<CR>
 
 "close surrounding windows
 map <LEADER>H <C-w>h:q<CR>
