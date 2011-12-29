@@ -167,5 +167,9 @@ if !has('gui_running')
   autocmd VimEnter * call ToggleDisableEnableMiniBufExplorer()
 endif
 
+" shave and load folds
+au BufWinLeave * silent! mkview
+au BufWinEnter * silent! loadview
+
 silent! so ~/.vim/mapvimrc
 silent! so ./.localvimrc
