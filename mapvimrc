@@ -34,7 +34,7 @@ map j gj
 map k gk
 
 "enter new line without insert mode
-nmap <CR> i<CR><ESC>
+nmap <S-CR> i<CR><ESC>
 nmap <BS> X
 
 "edit mode keymap
