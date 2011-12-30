@@ -42,6 +42,13 @@ filetype indent on
 set wildchar=<Tab> wildmenu wildmode=list:longest
 set wildignore=.o,.obj,.git,*.swp,*.*~,*.gif,*.png,*.ico,*.jpg,*.class,*.gem,*.gz,dependencies,tmp,_build,cover_db,public/stylesheets/*.css
 
+"hightlight extra space
+highlight ExtraWhitespace ctermbg=DarkGrey guibg=DarkGrey
+match ExtraWhitespace /[ \t]\+$/
+
+"better background
+highlight Pmenu guibg=grey14 guifg=moccasin ctermbg=DarkGrey ctermfg=Black
+
 " Color the status line
 hi StatusLine ctermfg=blue ctermbg=lightgrey
 

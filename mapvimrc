@@ -10,13 +10,6 @@ map ga :Alternate<CR>
 
 map <LEADER>3 \\<SPACE>
 
-"hightlight extra space
-highlight ExtraWhitespace ctermbg=DarkGrey guibg=DarkGrey
-match ExtraWhitespace /[ \t]\+$/
-
-"better background
-highlight Pmenu guibg=grey14 guifg=moccasin ctermbg=DarkGrey ctermfg=Black
-
 map <LEADER>o :e<SPACE>
 map <LEADER>n :n<SPACE>
 
