@@ -23,10 +23,6 @@ set nocompatible
 " line number
 set number
 
-"enable mouse
-set mouse=a
-set selectmode=mouse
-
 set splitright
 
 set fillchars=vert:\ 

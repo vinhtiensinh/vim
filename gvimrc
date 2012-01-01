@@ -1,6 +1,11 @@
 " Custom status line
 set statusline=%F\ %=[\ %{GetCurrentProject()}\ ]%=[\ %c\ :\ %l\ :\ %L\ ]\ %h\ (%P)
 
+"enable mouse
+set mouse=a
+set selectmode=mouse
+
+
 set guioptions-=T
 set guioptions-=L
 set guioptions-=r

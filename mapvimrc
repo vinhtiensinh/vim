@@ -8,7 +8,7 @@ map gl h$
 
 map ga :Alternate<CR>
 
-map <LEADER>3 \\<SPACE>
+map <LEADER>3 \\\
 
 map <LEADER>o :e<SPACE>
 map <LEADER>n :n<SPACE>
