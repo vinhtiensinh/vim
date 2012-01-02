@@ -3,7 +3,6 @@ if !exists("g:projects")
 endif
 
 autocmd VimEnter * call SwitchToProject()
-map 0<LEADER> :BufExplorer<CR><Down><CR>
 
 autocmd BufEnter,BufWinEnter,WinEnter * call RemoveMiniBufDuplicateWindow() | call CloseAllIfOnlyBufExplorerLeft()
 autocmd BufEnter * syntax on
