@@ -113,7 +113,7 @@ map <C-<> 5<C-w>>
 map <C-_> 5<C-w>-
 map <C-+> 5<C-w>+
 
-map 0<LEADER> :BufExplorer<CR><Down><CR>
+map 0<LEADER> :MRU<CR><Down><CR>
 " Macvim mapping
 if has("gui_macvim")
   map  <D-s> <ESC>:wa<CR>
