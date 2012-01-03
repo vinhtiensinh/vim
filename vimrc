@@ -146,8 +146,9 @@ endfunction
 
 
 " taglist
-so $HOME/.vim/bundle/taglist/plugin/taglist.vim
+so $HOME/.vim/bundle/taglist-plus/plugin/taglist-plus.vim
 :TlistAddFiles ./tags
+:TlistAddFiles ./jsctags
 let Tlist_Ctags_Cmd = '/opt/local/bin/ctags'
 let Tlist_Exit_OnlyWindow = 1
 let Tlist_Enable_Fold_Column = 0
