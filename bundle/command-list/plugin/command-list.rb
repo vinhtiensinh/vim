@@ -203,119 +203,29 @@ CommandList::register_list(
   :map_item_with_list => true,
   :items => [
     {
-      :function    => ":call SwitchToProjectCmd('librea')",
-      :map         => 'l',
-      :text        => '[l]ibrea',
-    },
-    {
-      :function    => ":call SwitchToProjectCmd('jetwire')",
+      :function    => ":call SwitchToProjectCmd('jack')",
       :map         => 'j',
-      :text        => '[j]etwire',
+      :text        => '[j]ack',
     },
     {
-      :function    => ":call SwitchToProjectCmd('agentdesktop')",
-      :map         => 'a',
-      :text        => '[a]gentdesktop',
-    },
-    {
-      :function    => ":call SwitchToProjectCmd('reaxml')",
-      :map         => 'r',
-      :text        => '[r]eaxml',
-    },
-    {
-      :function    => ":call SwitchToProjectCmd('readb')",
+      :function    => ":call SwitchToProjectCmd('beehome')",
       :map         => 'b',
-      :text        => 'read[b]',
+      :text        => '[b]eehome',
     },
     {
-      :function    => ":call SwitchToProjectCmd('product-e2e')",
+      :function    => ":call SwitchToProjectCmd('apartment')",
+      :map         => 'a',
+      :text        => '[a]partment',
+    },
+    {
+      :function    => ":call SwitchToProjectCmd('p')",
       :map         => 'p',
-      :text        => '[p]roduct-e2e',
+      :text        => '[p]erform',
     },
     {
-      :function    => ":call SwitchToProjectCmd('ec')",
-      :map         => 'e',
-      :text        => '[e]c'
-    },
-    {
-      :function    => ":call SwitchToProjectCmd('cp-agentadmin')",
-      :map         => 'c',
-      :text        => '[c]p-agentadmin'
-    },
-    {
-      :function    => ":call SwitchToProjectCmd('db-migrations')",
-      :map         => 'd',
-      :text        => '[d]b-migrations',
-    },
-    {
-      :function    => ":call SwitchToProjectCmd('vim')",
+      :function    => ":call SwitchToProjectCmd('v')",
       :map         => 'v',
       :text        => '[v]im',
-    },
-    {
-      :function    => ":call SwitchToProjectCmd('thumbelina')",
-      :map         => 't',
-      :text        => '[t] thumbelina',
-    },
-    {
-      :function    => ":call SwitchToProjectCmd('zsh')",
-      :map         => 'z',
-      :text        => '[z]sh',
-    },
-    {
-      :function    => ":call SwitchToPath()",
-      :map         => 'f',
-      :text        => '[f] switch with input',
-    },
-    {
-      :function    => ":call CloseProject(GetCurrentProject())",
-      :map         => 'w',
-      :text        => '[w] close current project',
-    },
-    {
-      :function    => ":call CloseProject('librea')",
-      :map         => 'xl',
-      :text        => '[x]close [l]ibrea',
-    },
-    {
-      :function    => ":call CloseProject('agentdesktop')",
-      :map         => 'xa',
-      :text        => '[x]close agentdesktop',
-    },
-    {
-      :function    => ":call CloseProject('reaxml')",
-      :map         => 'xr',
-      :text        => '[x]close [r]eaxml',
-    },
-    {
-      :function    => ":call CloseProject('readb')",
-      :map         => 'xb',
-      :text        => '[x]close read[b]',
-    },
-    {
-      :function    => ":call CloseProject('product-e2e')",
-      :map         => 'xp',
-      :text        => '[x]close [p]roduct-e2e',
-    },
-    {
-      :function    => ":call CloseProject('ec')",
-      :map         => 'xe',
-      :text        => '[x]close [e]c'
-    },
-    {
-      :function    => ":call CloseProject('customer-platform')",
-      :map         => 'xc',
-      :text        => '[x]close [c]ustomer-platform',
-    },
-    {
-      :function    => ":call CloseProject('db-migrations')",
-      :map         => 'xd',
-      :text        => '[x]close [d]b-migrations',
-    },
-    {
-      :function    => ":call CloseProject('vim')",
-      :map         => 'xv',
-      :text        => '[x]close [v]im',
     },
   ]
 )
