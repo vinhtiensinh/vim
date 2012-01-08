@@ -142,10 +142,15 @@ if has("gui_macvim")
   imap <D-]> <ESC>lvExi
 
   "map scrolling
-  map <D-h> g^
-  map <D-l> g$
-  map <D-j> <C-d>
-  map <D-k> <C-u>
+  nmap <D-f> <C-f>
+  nmap <D-b> <C-b>
+  
+  
+  "switching window
+  nmap <D-h> <C-w>h
+  nmap <D-j> <C-w>j
+  nmap <D-k> <C-w>k
+  nmap <D-l> <C-w>l
 
   map <D-P> $a<Space><ESC>p
   map <D-3> :call ToggleTagList()<CR>
