@@ -227,6 +227,16 @@ CommandList::register_list(
       :map         => 'v',
       :text        => '[v]im',
     },
+    {
+      :function    => ":call SwitchToPath()",
+      :map         => 'f',
+      :text        => '[f] switch with input',
+    },
+    {
+      :function    => ":call CloseProject(GetCurrentProject())",
+      :map         => 'w',
+      :text        => '[w] close current project',
+    },
   ]
 )
 CommandList::register_list(
