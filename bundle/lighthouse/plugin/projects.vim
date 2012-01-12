@@ -3,5 +3,5 @@ let g:projects = [
       \['jack', '/Users/vinhtran/jack'],
       \['perform', '/Users/vinhtran/perform'],
       \['apartment', '/Users/vinhtran/apartment'],
-      \['beehome', '/Users/vinhtran/beehome']
+      \['shop9', '/Users/vinhtran/shop9']
       \]
