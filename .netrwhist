@@ -1,3 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_cnt =3
 let g:netrw_dirhist_1='/Library/PostgreSQL/9.0/data'
+let g:netrw_dirhist_2='/Users/vinhtran/ripple/lib/ripple'
+let g:netrw_dirhist_3='/Users/vinhtran/formic/lib'
