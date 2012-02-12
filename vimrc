@@ -1,3 +1,6 @@
+"Disable the blinking
+:set guicursor+=a:blinkon0
+
 call pathogen#infect()
 call pathogen#helptags()
 
