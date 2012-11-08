@@ -168,7 +168,7 @@ let Tlist_Use_Right_Window = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_enable_signs=1
 let g:syntastic_quiet_warnings=1
-let g:syntastic_disabled_filetypes = ['cucumber']
+let g:syntastic_disabled_filetypes = ['cucumber', 'sass', 'scss']
 
 " disable lighthouse if on terminal
 if !has('gui_running')

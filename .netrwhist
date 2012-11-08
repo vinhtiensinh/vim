@@ -1,7 +1,7 @@
 let g:netrw_dirhistmax  =10
 let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/Library/PostgreSQL/9.0/data'
-let g:netrw_dirhist_2='/Users/vinhtran/ripple/lib/ripple'
-let g:netrw_dirhist_3='/Users/vinhtran/formic/lib'
-let g:netrw_dirhist_4='/Users/vinhtran/babushka-deps/unicorn'
-let g:netrw_dirhist_5='/Users/vinhtran/tmp/jack_sso_release/jack'
+let g:netrw_dirhist_1='/Users/vinhtran/sangtao/config/initializers'
+let g:netrw_dirhist_2='/Users/vinhtran/sangtao'
+let g:netrw_dirhist_3='/Users/vinhtran/markuper'
+let g:netrw_dirhist_4='/Users/vinhtran/jack/config/deploy'
+let g:netrw_dirhist_5='/Users/vinhtran/shop9/spec/javascripts/helpers'
