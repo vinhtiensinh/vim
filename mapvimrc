@@ -6,7 +6,8 @@ map g<S-CR> :vsplit<CR>g<C-]>
 map gh h^
 map gl h$
 
-map ga :Alternate<CR>
+map ga :A<CR>
+map gr :R<CR>
 
 map <LEADER>3 \\\
 
