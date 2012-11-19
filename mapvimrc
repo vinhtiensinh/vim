@@ -158,8 +158,6 @@ if has("gui_macvim")
   nmap <ESC> :w<CR>
   map <D-@> :call ToggleTransparency()<CR>
   imap <D-@> <ESC>:call ToggleTransparency()<CR>a
-  nmap <RightMouse> :call ToggleBetweenNERDTreeAndBufExplorer()<CR>
-  nmap <MiddleMouse> :call OpenFilesFromClipboard('e')<CR>
   map <D-!> :call CloseNERDTreeAndBufExplorer()<CR>
   map <D-1> :call ToggleBetweenNERDTreeAndBufExplorer()<CR>
 endif
