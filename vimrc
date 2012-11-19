@@ -71,8 +71,8 @@ set ignorecase
 set smartcase
 
 " dont beep
-set visualbell
-set noerrorbells
+set noerrorbells visualbell t_vb=
+autocmd GUIEnter * set visualbell t_vb=
 
 "quicker autocomplete
 set complete -=i
