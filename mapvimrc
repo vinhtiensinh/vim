@@ -206,4 +206,8 @@ elseif has('gui_running')
   imap <M-@> <ESC>:call ToggleTransparency()<CR>a
   map <M-!> :call CloseNERDTreeAndBufExplorer()<CR>
   map <M-1> :call ToggleBetweenNERDTreeAndBufExplorer()<CR>
+
+  "more macvim simulation stuff
+  map <M-q> :qa!<CR>
+  imap <M-q> <ESC>:qa!<CR>
 endif
