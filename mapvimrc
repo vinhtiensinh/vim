@@ -115,6 +115,7 @@ map <C-_> 5<C-w>-
 map <C-+> 5<C-w>+
 
 map 0<LEADER> :MRU<CR><Down><CR>
+
 " Macvim mapping
 if has("gui_macvim")
   map  <D-s> <ESC>:wa<CR>
@@ -160,4 +161,49 @@ if has("gui_macvim")
   imap <D-@> <ESC>:call ToggleTransparency()<CR>a
   map <D-!> :call CloseNERDTreeAndBufExplorer()<CR>
   map <D-1> :call ToggleBetweenNERDTreeAndBufExplorer()<CR>
+
+elseif has('gui_running')
+  map  <M-s> <ESC>:wa<CR>
+  vmap <M-s> <ESC>:w<CR>
+  cmap <M-s> <ESC>:w<CR>
+  omap <M-s> <ESC>:w<CR>
+  imap <silent> <M-s> <ESC>:w<CR>
+
+  map <M-w> :call CommandW()<CR>
+
+  " move around window
+  imap <M-a> <ESC>A
+  imap <M-i> <ESC>I
+  imap <M-h> <Left>
+  imap <M-j> <Down>
+  imap <M-k> <Up>
+  imap <M-l> <Right>
+  imap <M-w> <Right><ESC>wi
+  imap <M-e> <Right><ESC>ea
+  imap <M-b> <ESC>bi
+  imap <M-d> <ESC>xi
+  imap <M-x> <ESC>lxi
+
+  "delete next and previous word in insert mode
+  imap <M-[> <ESC>lvBxi
+  imap <M-]> <ESC>lvExi
+
+  "map scrolling
+  nmap <M-f> <C-f>
+  nmap <M-b> <C-b>
+  
+  
+  "switching window
+  nmap <M-h> <C-w>h
+  nmap <M-j> <C-w>j
+  nmap <M-k> <C-w>k
+  nmap <M-l> <C-w>l
+
+  map <M-P> $a<Space><ESC>p
+  map <M-3> :call ToggleTagList()<CR>
+  nmap <ESC> :w<CR>
+  map <M-@> :call ToggleTransparency()<CR>
+  imap <M-@> <ESC>:call ToggleTransparency()<CR>a
+  map <M-!> :call CloseNERDTreeAndBufExplorer()<CR>
+  map <M-1> :call ToggleBetweenNERDTreeAndBufExplorer()<CR>
 endif
