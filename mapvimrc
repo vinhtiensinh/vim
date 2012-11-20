@@ -7,7 +7,9 @@ map gh h^
 map gl h$
 
 map ga :A<CR>
-map gs :R<CR>
+map gA :AS<CR>
+map gr :R<CR>
+map gR :RS<CR>
 
 map <LEADER>3 \\\
 
