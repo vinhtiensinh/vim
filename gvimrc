@@ -8,6 +8,7 @@ set selectmode=mouse
 set guioptions-=T
 set guioptions-=L
 set guioptions-=r
+set guioptions-=m
 set go+=b
 set cursorline
 
