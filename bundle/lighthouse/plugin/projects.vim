@@ -1,7 +1,3 @@
 let g:projects = [
-      \['vim', '/Users/vinhtran/vim'],
-      \['jack', '/Users/vinhtran/jack'],
-      \['perform', '/Users/vinhtran/perform'],
-      \['apartment', '/Users/vinhtran/apartment'],
-      \['shop9', '/Users/vinhtran/shop9']
+      \['property1view', '/media/truecrypt1/property1view/'],
       \]
