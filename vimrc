@@ -29,7 +29,8 @@ set number
 
 set splitright
 
-set fillchars=vert:\ 
+"note the space at the end
+set fillchars+=vert:\ 
 
 
 " syntax and filetype on
@@ -181,8 +182,8 @@ autocmd BufReadPost *
     \ exe "normal g`\"" |
     \ endif
 
-"removing all the trailing spaces
-autocmd BufWritePre * :%s/\s\+$//e
-
 silent! so ~/.vim/mapvimrc
 silent! so ./.localvimrc
+
+"extra file type
+au BufRead,BufNewFile *.hamlc set ft=haml

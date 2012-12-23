@@ -1,3 +1,4 @@
+export PATH=/$HOME/bin:/usr/local/bin:$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 alias gc='git commit -m'
 alias ga='git add'
 alias gd='git diff --color'
