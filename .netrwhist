@@ -1,5 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_cnt =9
 let g:netrw_dirhist_1='/Users/vinhtran/sangtao/config/initializers'
 let g:netrw_dirhist_2='/Users/vinhtran/sangtao'
 let g:netrw_dirhist_3='/Users/vinhtran/markuper'
@@ -8,3 +8,4 @@ let g:netrw_dirhist_5='/Users/vinhtran/shop9/spec/javascripts/helpers'
 let g:netrw_dirhist_6='/Users/vinhtran/vim/bundle/advanced_text_object'
 let g:netrw_dirhist_7='/Users/vinhtran/vim/bundle/rsync'
 let g:netrw_dirhist_8='/Users/vinhtran/vim/bundle/taglist-plus'
+let g:netrw_dirhist_9='/Users/vinhtran/.vimperator'
