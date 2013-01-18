@@ -245,6 +245,11 @@ CommandList::register_list(
   :map_item_with_list => true,
   :items => [
     {
+      :function    => "1R ",
+      :map         => 'n',
+      :text        => 'everythi[n]g',
+    },
+    {
       :function    => ":Rcontroller",
       :map         => 'c',
       :text        => '[c]ontroller',
