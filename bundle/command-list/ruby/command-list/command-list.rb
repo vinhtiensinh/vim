@@ -152,7 +152,7 @@ class MenuItem
       elsif ifunction.match('\(')
         VIM::command("call #{ifunction}")
       else
-        VIM::command("call feedkeys(\"#{ifunction}\")")
+        VIM::command("call feedkeys(\":#{ifunction}\")")
       end
     end
   end

@@ -1,5 +1,5 @@
 "Disable the blinking
-:set guicursor+=a:blinkon0
+set guicursor+=a:blinkon0
 
 call pathogen#infect()
 call pathogen#helptags()
@@ -29,8 +29,8 @@ set number
 
 set splitright
 
-set fillchars=vert:\ 
-
+"note the space at the end
+set fillchars+=vert:\ 
 
 " syntax and filetype on
 syntax on
@@ -41,10 +41,6 @@ filetype indent on
 " wild chars and ignore file type and folders
 set wildchar=<Tab> wildmenu wildmode=list:longest
 set wildignore=.o,.obj,.git,*.swp,*.*~,*.gif,*.png,*.ico,*.jpg,*.class,*.gem,*.gz,dependencies,tmp,_build,cover_db,public/stylesheets/*.css
-
-"hightlight extra space
-highlight ExtraWhitespace ctermbg=DarkGrey guibg=DarkGrey
-match ExtraWhitespace /[ \t]\+$/
 
 "better background
 highlight Pmenu guibg=grey14 guifg=moccasin ctermbg=DarkGrey ctermfg=Black
@@ -82,6 +78,10 @@ let g:SuperTabCrMapping = 0
 
 " color scheme
 colorscheme vividchalk
+
+"hightlight extra space
+highlight ExtraWhitespace ctermbg=DarkGrey guibg=DarkGrey
+match ExtraWhitespace /[ \t]\+$/
 
 " =========================== PLUGIN CONFIGURATIONS ==============================================================
 
@@ -181,8 +181,8 @@ autocmd BufReadPost *
     \ exe "normal g`\"" |
     \ endif
 
-"removing all the trailing spaces
-autocmd BufWritePre * :%s/\s\+$//e
-
 silent! so ~/.vim/mapvimrc
 silent! so ./.localvimrc
+
+"extra file type
+au BufRead,BufNewFile *.hamlc set ft=haml

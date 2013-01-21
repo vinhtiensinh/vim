@@ -245,6 +245,11 @@ CommandList::register_list(
   :map_item_with_list => true,
   :items => [
     {
+      :function    => "1R ",
+      :map         => 'n',
+      :text        => 'everythi[n]g',
+    },
+    {
       :function    => ":Rcontroller",
       :map         => 'c',
       :text        => '[c]ontroller',
@@ -309,16 +314,6 @@ CommandList::register_list(
       :map         => 'o',
       :text        => 'l[o]cale',
     },
-    {
-      :function    => ":A",
-      :map         => 'a',
-      :text        => '[a]lternate a(model) = spec',
-    },
-    {
-      :function    => ":Relate",
-      :map         => 'r',
-      :text        => '[r]elate a(model) = schema',
-    },
   ]
 )
 
@@ -331,24 +326,6 @@ CommandList::register_list(
       :function    => "DeleleteInnerMostSurround()",
       :map         => 's',
       :text        => 'inner most [s]urround',
-    },
-  ]
-)
-
-CommandList::register_list(
-  :name  => 'Refactor ...',
-  :map   =>'<LEADER>r',
-  :map_item_with_list => true,
-  :items => [
-    {
-      :function    => "ExtractVariable()",
-      :map         => 'v',
-      :text        => 'extract [v]ariable',
-    },
-    {
-      :function    => "ExtractMethod()",
-      :map         => 'm',
-      :text        => 'extract [m]ethod',
     },
   ]
 )
