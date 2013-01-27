@@ -329,3 +329,21 @@ CommandList::register_list(
     },
   ]
 )
+
+CommandList::register_list(
+  :name  => 'Goto Joosy..',
+  :map   =>'gs',
+  :map_item_with_list => true,
+  :items => [
+    {
+      :function    => "JsyPage",
+      :map         => 'p',
+      :text        => '[p]page',
+    },
+    {
+      :function    => "JsyTemplate",
+      :map         => 't',
+      :text        => '[t]template',
+    },
+  ]
+)
