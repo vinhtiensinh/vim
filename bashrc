@@ -13,3 +13,6 @@ alias bake='bundle exec rake'
 alias sb='source ~/.bashrc'
 
 alias grake='rake -T | grep'
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
