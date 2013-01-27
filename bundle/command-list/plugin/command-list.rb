@@ -336,12 +336,12 @@ CommandList::register_list(
   :map_item_with_list => true,
   :items => [
     {
-      :function    => "JsyPage",
+      :function    => ":JsyPage",
       :map         => 'p',
       :text        => '[p]page',
     },
     {
-      :function    => "JsyTemplate",
+      :function    => ":JsyTemplate",
       :map         => 't',
       :text        => '[t]template',
     },
