@@ -1,3 +1,4 @@
-noremap j 9j
-noremap k 9k
-set hintchars=asdfjklqweruiopzxcvnmgh;
+map -builtin j 9j
+map -builtin k 9k
+set hintkeys=asdfjklqweruiopzxcvnmgh;
+set guioptions+=BTn

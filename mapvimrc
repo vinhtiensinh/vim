@@ -46,12 +46,6 @@ map <LEADER>J <C-w>j:q<CR>
 map <LEADER>K <C-w>k:q<CR>
 map <LEADER>L <C-w>l:q<CR>
 
-
-nmap <Tab> :call NextBuffer()<CR>
-nmap <S-Tab> :call PreviousBuffer()<CR>
-
-
-
 "string to symbol"
 map <LEADER>2s ds'i:<ESC>
 

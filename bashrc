@@ -1,4 +1,4 @@
-export PATH=/$HOME/bin:/usr/local/bin:$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+export PATH=/$HOME/bin:/usr/local/bin:$PATH:$HOME/.rvm/bin:/usr/local/share/npm/bin
 alias gc='git commit -m'
 alias ga='git add'
 alias gd='git diff --color'
@@ -9,6 +9,7 @@ alias gk='git checkout'
 alias rs='rails server'
 alias be='bundle exec'
 alias bake='bundle exec rake'
+alias data='cd ~/data'
 
 alias sb='source ~/.bashrc'
 

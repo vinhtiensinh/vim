@@ -9,6 +9,7 @@ let maplocalleader = '\'
 
 " Use undo file and no swap file
 set undofile
+set undodir = ~/undofiles/
 set noswapfile
 
 " Tab to be two space
@@ -83,7 +84,7 @@ colorscheme vividchalk
 highlight ExtraWhitespace ctermbg=DarkGrey guibg=DarkGrey
 match ExtraWhitespace /[ \t]\+$/
 
-" =========================== PLUGIN CONFIGURATIONS ==============================================================
+" ======= PLUGIN CONFIGURATIONS =========
 
 " minibufexplorer
 let g:miniBufExplVSplit = 25
