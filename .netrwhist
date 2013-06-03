@@ -1,6 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_cnt =5
 let g:netrw_dirhist_1='/Volumes/data/fm/fm_base/lib/fm_base'
 let g:netrw_dirhist_2='/Volumes/data/fm/fm_base/gem_source'
 let g:netrw_dirhist_3='/Volumes/data/fm/fm_base/gem_source/lib/fm_base/controllers'
 let g:netrw_dirhist_4='/Users/vinhtran/.pentadactyl'
+let g:netrw_dirhist_5='/Users/vinhtran/vim/bundle/slim/ftdetect'
