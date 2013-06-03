@@ -14,8 +14,9 @@ alias data='cd ~/data'
 alias sb='source ~/.bashrc'
 
 alias grake='rake -T | grep'
-alias dbmigrate='rake db:mgirate; RAILS_ENV=test rake db:migrate'
+alias dbmigrate='rake db:migrate; RAILS_ENV=test rake db:migrate'
 alias dbrollback='rake db:rollback; RAILS_ENV=test rake db:rollback'
+alias truecrypt='/Applications/TrueCrypt.app/Contents/MacOS/Truecrypt --text'
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
