@@ -14,6 +14,19 @@ alias data='cd ~/data'
 alias sb='source ~/.bashrc'
 
 alias grake='rake -T | grep'
+alias dbmigrate='rake db:mgirate; RAILS_ENV=test rake db:migrate'
+alias dbrollback='rake db:rollback; RAILS_ENV=test rake db:rollback'
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+
+## IBSA alias
+alias fmt='ssh vinht@test-wgnow-filex.ibsa.vlan'
+alias fmuat='ssh vinht@uat-wgnow-filex.ibsa.vlan'
+alias cdfm='cd ~/data/fm'
+alias cdorigination='cd ~/data/fm/fm_origination_express'
+alias cdcredit='cd ~/data/fm/fm_credit'
+alias cdcontract='cd ~/data/fm/fm_retail_contract_management'
+alias cdadmin='cd ~/data/fm/fm_admin'
+alias cdbase='cd ~/data/fm/fm_base'
