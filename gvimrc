@@ -10,6 +10,7 @@ set guioptions-=L
 set guioptions-=r
 set guioptions-=m
 set go+=b
+set go+=a
 set cursorline
 
 nmap <RightMouse> :call ToggleBetweenNERDTreeAndBufExplorer()<CR>
