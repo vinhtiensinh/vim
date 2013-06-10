@@ -18,11 +18,14 @@ alias dbmigrate='rake db:migrate; RAILS_ENV=test rake db:migrate'
 alias dbrollback='rake db:rollback; RAILS_ENV=test rake db:rollback'
 alias truecrypt='/Applications/TrueCrypt.app/Contents/MacOS/Truecrypt --text'
 
+alias rails='bin/rails'
+
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
 
 ## IBSA alias
+alias fmmount='truecrypt -t -k "" --protect-hidden=no ~/data/ibs ~/data/fm'
 alias fmt='ssh vinht@test-wgnow-filex.ibsa.vlan'
 alias fmuat='ssh vinht@uat-wgnow-filex.ibsa.vlan'
 alias cdfm='cd ~/data/fm'

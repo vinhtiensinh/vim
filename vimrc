@@ -9,7 +9,7 @@ let maplocalleader = '\'
 
 " Use undo file and no swap file
 set undofile
-set undodir = ~/undofiles/
+set udir=/tmp/
 set noswapfile
 
 " Tab to be two space
