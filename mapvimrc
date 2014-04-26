@@ -152,7 +152,6 @@ if has("gui_macvim")
 
   map <D-P> $a<Space><ESC>p
   map <D-3> :call ToggleTagList()<CR>
-  nmap <ESC> :w<CR>
   map <D-@> :call ToggleTransparency()<CR>
   imap <D-@> <ESC>:call ToggleTransparency()<CR>a
   map <D-!> :call CloseNERDTreeAndBufExplorer()<CR>
@@ -197,7 +196,6 @@ elseif has('gui_running')
 
   map <M-P> $a<Space><ESC>p
   map <M-3> :call ToggleTagList()<CR>
-  nmap <ESC> :w<CR>
   map <M-@> :call ToggleTransparency()<CR>
   imap <M-@> <ESC>:call ToggleTransparency()<CR>a
   map <M-!> :call CloseNERDTreeAndBufExplorer()<CR>
