@@ -1,4 +1,11 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='/Volumes/data/fm/fm_retail_contract_management'
-let g:netrw_dirhist_2='/Volumes/data/autodeck-app/plugins'
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/Volumes/data/autodeckD/autodeck/app/assets/javascripts'
+let g:netrw_dirhist_2='/Volumes/data/autodeckD/autodeck/waroom/playbooks/ssl'
+let g:netrw_dirhist_3='/Volumes/data/autodeckD/autodeck/app/assets/javascripts/auto_workshop/controllers/invoices'
+let g:netrw_dirhist_4='/Volumes/data/autodeckD/autodeck/app/assets/javascripts/mechanicdesk/http_interceptors'
+let g:netrw_dirhist_5='/Volumes/data/fm/fm_origination_express'
+let g:netrw_dirhist_6='/Volumes/data/autodeckD/mechanicdesk/app/assets/javascripts/mechanicdesk/directives'
+let g:netrw_dirhist_7='/Users/vinhtran/.rvm/gems/ruby-2.1.0/gems/sunspot_solr-2.1.0/solr/solr/conf'
+let g:netrw_dirhist_8='/Volumes/data/autodeckD/mechanicdesk/public'
+let g:netrw_dirhist_9='/Volumes/data/autodeckD/mechanicdesk/app/assets/javascripts/auto_workshop/controllers/supplier_credit_notes'

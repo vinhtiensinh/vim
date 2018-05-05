@@ -36,9 +36,9 @@ nmap <BS> X
 "edit mode keymap
 imap <C-SPACE> <C-x><C-o>
 imap <S-Tab> <C-o>
-imap <silent> <ESC> <ESC>:w<CR>
-vmap <silent> <ESC> <ESC>:w<CR>
-smap <silent> <ESC> <ESC>:w<CR>
+" imap <silent> <ESC> <ESC>:w<CR>
+" vmap <silent> <ESC> <ESC>:w<CR>
+" smap <silent> <ESC> <ESC>:w<CR>
 
 "close surrounding windows
 map <LEADER>H <C-w>h:q<CR>

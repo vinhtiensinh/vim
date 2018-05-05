@@ -1,4 +1,1 @@
-map -builtin j 9j
-map -builtin k 9k
-set hintkeys=asdfjklqweruiopzxcvnmgh;
-set guioptions+=BTn
+set hintchars=asdfjklqweruiopzxcvnmgh;
