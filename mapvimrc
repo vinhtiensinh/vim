@@ -25,6 +25,10 @@ let g:splitjoin_ruby_curly_braces = 0
 vmap <Tab> >gv
 vmap <S-Tab> <gv
 
+"Tab in normal mode - run test
+nmap <Tab>t :TestNearest<CR>
+nmap <Tab>tt :TestFile<CR>
+
 "why bother differenciate between j, k and gj, gk
 map j gj
 map k gk
