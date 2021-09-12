@@ -26,8 +26,8 @@ vmap <Tab> >gv
 vmap <S-Tab> <gv
 
 "Tab in normal mode - run test
-nmap <Tab>t :TestNearest<CR>
-nmap <Tab>tt :TestFile<CR>
+nmap <Tab><Tab> :TestNearest<CR>
+nmap <Tab>t :TestFile<CR>
 
 "why bother differenciate between j, k and gj, gk
 map j gj
