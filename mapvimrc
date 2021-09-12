@@ -11,14 +11,14 @@ map gA :AS<CR>
 map gr :R<CR>
 map gR :RS<CR>
 
-map <LEADER>3 \\\
+map <SPACE>3 \\\
 
-map <LEADER>o :e<SPACE>
-map <LEADER>n :n<SPACE>
+map <SPACE>o :e<SPACE>
+map <SPACE>n :n<SPACE>
 
 "splitjoin
-nmap <Leader>- :SplitjoinJoin<cr>
-nmap <Leader>= :SplitjoinSplit<cr>
+nmap <SPACE>- :SplitjoinJoin<cr>
+nmap <SPACE>= :SplitjoinSplit<cr>
 let g:splitjoin_ruby_curly_braces = 0
 
 "Tab in visual mode
@@ -45,17 +45,17 @@ vmap <silent> <ESC> <ESC>:w<CR>
 smap <silent> <ESC> <ESC>:w<CR>
 
 "close surrounding windows
-map <LEADER>H <C-w>h:q<CR>
-map <LEADER>J <C-w>j:q<CR>
-map <LEADER>K <C-w>k:q<CR>
-map <LEADER>L <C-w>l:q<CR>
+map <SPACE>H <C-w>h:q<CR>
+map <SPACE>J <C-w>j:q<CR>
+map <SPACE>K <C-w>k:q<CR>
+map <SPACE>L <C-w>l:q<CR>
 
 "delete next characters with Ctrl-l
 "to be same directional wise with Ctrl-h
 imap <C-l> <C-o>x
 
 "string to symbol"
-map <LEADER>2s ds'i:<ESC>
+map <SPACE>2s ds'i:<ESC>
 
 "folding the block
 nnoremap <silent> za :call ToggleFolding()<CR>
@@ -75,7 +75,7 @@ execute current_win . " wincmd w"
 endfunction
 
 
-map <LEADER>6 :call ToggleDisableEnableMiniBufExplorer()<CR>
+map <SPACE>6 :call ToggleDisableEnableMiniBufExplorer()<CR>
 omap <silent> ic <Plug>CamelCaseMotion_iw
 xmap <silent> ic <Plug>CamelCaseMotion_iw
 
@@ -91,10 +91,10 @@ vnoremap . :m-2<CR>gv=gv
 
 map @@ @q
 
-map <LEADER>e :call OpenFilesFromClipboard('e')<CR>
+map <SPACE>e :call OpenFilesFromClipboard('e')<CR>
 
-vmap <LEADER>nrw :Narrow<CR>
-vmap <LEADER>wid :Widen<CR>
+vmap <SPACE>nrw :Narrow<CR>
+vmap <SPACE>wid :Widen<CR>
 
 smap ' S'
 smap " S"
@@ -102,8 +102,7 @@ vmap ' S'
 vmap " S"
 
 map <SPACE><SPACE> :FZF<CR>
-map <S-SPACE> :FloatermToggle<CR>
-map <LEADER>W :TMiniBufExplorerCloseAllOthers<CR>
+map <SPACE>W :TMiniBufExplorerCloseAllOthers<CR>
 map <C-1> :call ToggleBetweenNERDTreeAndBufExplorer()<CR>
 map <C-!> :call CloseNERDTreeAndBufExplorer()<CR>
 
@@ -113,7 +112,7 @@ nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
 nmap <C-l> <C-w>l
 
-map 0<LEADER> :MRU<CR><Down><CR>
+map 0<SPACE> :MRU<CR><Down><CR>
 
 " Macvim mapping
 if has("gui_macvim")
