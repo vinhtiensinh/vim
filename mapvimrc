@@ -109,53 +109,47 @@ nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
 nmap <C-l> <C-w>l
 
-" resize
-map <C->> 5<C-w><
-map <C-<> 5<C-w>>
-map <C-_> 5<C-w>-
-map <C-+> 5<C-w>+
-
 map 0<LEADER> :MRU<CR><Down><CR>
 
 " Macvim mapping
 if has("gui_macvim")
-map  <D-s> <ESC>:wa<CR>
-vmap <D-s> <ESC>:w<CR>
-cmap <D-s> <ESC>:w<CR>
-omap <D-s> <ESC>:w<CR>
-imap <silent> <D-s> <ESC>:w<CR>
+  map  <D-s> <ESC>:wa<CR>
+  vmap <D-s> <ESC>:w<CR>
+  cmap <D-s> <ESC>:w<CR>
+  omap <D-s> <ESC>:w<CR>
+  imap <silent> <D-s> <ESC>:w<CR>
 
-map <D-w> :call CommandW()<CR>
+  map <D-w> :call CommandW()<CR>
 
-" move around window
-imap <D-a> <ESC>A
-imap <D-i> <ESC>I
-imap <D-h> <Left>
-imap <D-j> <Down>
-imap <D-k> <Up>
-imap <D-l> <Right>
-imap <D-w> <Right><ESC>wi
-imap <D-e> <Right><ESC>ea
-imap <D-b> <ESC>bi
-imap <D-d> <ESC>xi
-imap <D-x> <ESC>lxi
+  " move around window
+  imap <D-a> <ESC>A
+  imap <D-i> <ESC>I
+  imap <D-h> <Left>
+  imap <D-j> <Down>
+  imap <D-k> <Up>
+  imap <D-l> <Right>
+  imap <D-w> <Right><ESC>wi
+  imap <D-e> <Right><ESC>ea
+  imap <D-b> <ESC>bi
+  imap <D-d> <ESC>xi
+  imap <D-x> <ESC>lxi
 
-"delete next and previous word in insert mode
-imap <D-[> <ESC>lvBxi
-imap <D-]> <ESC>lvExi
+  "delete next and previous word in insert mode
+  imap <D-[> <ESC>lvBxi
+  imap <D-]> <ESC>lvExi
 
-"map scrolling
-nmap <D-f> <C-f>
-nmap <D-b> <C-b>
+  "map scrolling
+  nmap <D-f> <C-f>
+  nmap <D-b> <C-b>
 
 
-"switching window
-nmap <D-h> <C-w>h
-nmap <D-j> <C-w>j
-nmap <D-k> <C-w>k
-nmap <D-l> <C-w>l
+  "resize window
+  nmap <D-h> 5<C-w>>
+  nmap <D-j> <C-w>+
+  nmap <D-k> <C-w>-
+  nmap <D-l> <C-w><
 
-map <D-P> $a<Space><ESC>p
+  map <D-P> $a<Space><ESC>p
   map <D-3> :call ToggleTagList()<CR>
   map <D-@> :call ToggleTransparency()<CR>
   imap <D-@> <ESC>:call ToggleTransparency()<CR>a
@@ -193,11 +187,13 @@ elseif has('gui_running')
   nmap <M-b> <C-b>
   
   
-  "switching window
-  nmap <M-h> <C-w>h
-  nmap <M-j> <C-w>j
-  nmap <M-k> <C-w>k
-  nmap <M-l> <C-w>l
+  "resize window
+  nmap <M-h> 5<C-w>>
+  nmap <M-j> <C-w>+
+  nmap <M-k> <C-w>-
+  nmap <M-l> <C-w><
+
+
 
   map <M-P> $a<Space><ESC>p
   map <M-3> :call ToggleTagList()<CR>
