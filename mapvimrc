@@ -36,15 +36,19 @@ nmap <BS> X
 "edit mode keymap
 imap <C-SPACE> <C-x><C-o>
 imap <S-Tab> <C-o>
-" imap <silent> <ESC> <ESC>:w<CR>
-" vmap <silent> <ESC> <ESC>:w<CR>
-" smap <silent> <ESC> <ESC>:w<CR>
+imap <silent> <ESC> <ESC>:w<CR>
+vmap <silent> <ESC> <ESC>:w<CR>
+smap <silent> <ESC> <ESC>:w<CR>
 
 "close surrounding windows
 map <LEADER>H <C-w>h:q<CR>
 map <LEADER>J <C-w>j:q<CR>
 map <LEADER>K <C-w>k:q<CR>
 map <LEADER>L <C-w>l:q<CR>
+
+"delete next characters with Ctrl-l
+"to be same directional wise with Ctrl-h
+imap <C-l> <C-o>x
 
 "string to symbol"
 map <LEADER>2s ds'i:<ESC>
@@ -53,17 +57,17 @@ map <LEADER>2s ds'i:<ESC>
 nnoremap <silent> za :call ToggleFolding()<CR>
 
 function! ToggleFolding()
-  if foldclosed('.') == -1 && &foldmethod == 'manual'
-    call feedkeys('zf%')
-  else
-    normal! za
-  endif
+if foldclosed('.') == -1 && &foldmethod == 'manual'
+  call feedkeys('zf%')
+else
+  normal! za
+endif
 endfunction
 
 function! ToggleTagList()
-  let current_win = winnr()
-  execute ":TlistToggle"
-  execute current_win . " wincmd w"
+let current_win = winnr()
+execute ":TlistToggle"
+execute current_win . " wincmd w"
 endfunction
 
 
@@ -93,7 +97,8 @@ smap " S"
 vmap ' S'
 vmap " S"
 
-map <LEADER><LEADER> :CommandTFlush<CR>:CommandT<CR>
+map <SPACE><SPACE> :FZF<CR>
+map <S-SPACE> :FloatermToggle<CR>
 map <LEADER>W :TMiniBufExplorerCloseAllOthers<CR>
 map <C-1> :call ToggleBetweenNERDTreeAndBufExplorer()<CR>
 map <C-!> :call CloseNERDTreeAndBufExplorer()<CR>
@@ -114,43 +119,43 @@ map 0<LEADER> :MRU<CR><Down><CR>
 
 " Macvim mapping
 if has("gui_macvim")
-  map  <D-s> <ESC>:wa<CR>
-  vmap <D-s> <ESC>:w<CR>
-  cmap <D-s> <ESC>:w<CR>
-  omap <D-s> <ESC>:w<CR>
-  imap <silent> <D-s> <ESC>:w<CR>
+map  <D-s> <ESC>:wa<CR>
+vmap <D-s> <ESC>:w<CR>
+cmap <D-s> <ESC>:w<CR>
+omap <D-s> <ESC>:w<CR>
+imap <silent> <D-s> <ESC>:w<CR>
 
-  map <D-w> :call CommandW()<CR>
+map <D-w> :call CommandW()<CR>
 
-  " move around window
-  imap <D-a> <ESC>A
-  imap <D-i> <ESC>I
-  imap <D-h> <Left>
-  imap <D-j> <Down>
-  imap <D-k> <Up>
-  imap <D-l> <Right>
-  imap <D-w> <Right><ESC>wi
-  imap <D-e> <Right><ESC>ea
-  imap <D-b> <ESC>bi
-  imap <D-d> <ESC>xi
-  imap <D-x> <ESC>lxi
+" move around window
+imap <D-a> <ESC>A
+imap <D-i> <ESC>I
+imap <D-h> <Left>
+imap <D-j> <Down>
+imap <D-k> <Up>
+imap <D-l> <Right>
+imap <D-w> <Right><ESC>wi
+imap <D-e> <Right><ESC>ea
+imap <D-b> <ESC>bi
+imap <D-d> <ESC>xi
+imap <D-x> <ESC>lxi
 
-  "delete next and previous word in insert mode
-  imap <D-[> <ESC>lvBxi
-  imap <D-]> <ESC>lvExi
+"delete next and previous word in insert mode
+imap <D-[> <ESC>lvBxi
+imap <D-]> <ESC>lvExi
 
-  "map scrolling
-  nmap <D-f> <C-f>
-  nmap <D-b> <C-b>
-  
-  
-  "switching window
-  nmap <D-h> <C-w>h
-  nmap <D-j> <C-w>j
-  nmap <D-k> <C-w>k
-  nmap <D-l> <C-w>l
+"map scrolling
+nmap <D-f> <C-f>
+nmap <D-b> <C-b>
 
-  map <D-P> $a<Space><ESC>p
+
+"switching window
+nmap <D-h> <C-w>h
+nmap <D-j> <C-w>j
+nmap <D-k> <C-w>k
+nmap <D-l> <C-w>l
+
+map <D-P> $a<Space><ESC>p
   map <D-3> :call ToggleTagList()<CR>
   map <D-@> :call ToggleTransparency()<CR>
   imap <D-@> <ESC>:call ToggleTransparency()<CR>a

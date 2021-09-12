@@ -4,7 +4,7 @@ set guicursor+=a:blinkon0
 call pathogen#infect()
 call pathogen#helptags()
 
-let mapleader = ' '
+let mapeader = ' '
 let maplocalleader = '\'
 
 " Use undo file and no swap file
@@ -78,7 +78,7 @@ set complete -=i
 let g:SuperTabCrMapping = 0
 
 " color scheme
-colorscheme vividchalk
+colorscheme gruvbox
 
 "hightlight extra space
 highlight ExtraWhitespace ctermbg=DarkGrey guibg=DarkGrey
@@ -120,13 +120,6 @@ function! GTTabMove(direction)
     normal! gT
   endif
 endfunction
-
-" commandT
-let g:CommandTCancelMap = '<SPACE>'
-let g:CommandTSelectNextMap = "<Tab>"
-let g:CommandTSelectPrevMap = "<S-Tab>"
-let g:CommandTAcceptSelectionSplitMap = '<S-Space>'
-let g:CommandTAcceptSelectionVSplitMap = '<S-CR>'
 
 " transparent
 let g:transparency = 0
