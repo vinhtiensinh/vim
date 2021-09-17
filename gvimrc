@@ -22,4 +22,5 @@ if has("gui_macvim")
   :macm File.Close key=<M-w>
   :macm Tools.List\ Errors key=<M-l>
   :macm Tools.Make key=<M-b>
+  :macm Edit.Select\ All key=<nop>
 endif
