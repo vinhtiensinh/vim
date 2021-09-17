@@ -54,6 +54,9 @@ map <SPACE>L <C-w>l:q<CR>
 "to be same directional wise with Ctrl-h
 imap <C-l> <C-o>x
 
+"auto save with ESC
+imap <ESC> <ESC>:w<CR>
+
 "string to symbol"
 map <SPACE>2s ds'i:<ESC>
 
