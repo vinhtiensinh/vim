@@ -80,7 +80,7 @@ CommandList::register_list(
 
 CommandList::register_list(
   :name  => 'Cucumber',
-  :map   =>'<LEADER>c',
+  :map   =>'<Space>c',
   :map_item_with_list => true,
   :items => [
     {
@@ -98,7 +98,7 @@ CommandList::register_list(
 
 CommandList::register_list(
   :name  => 'Search',
-  :map   =>'<LEADER>s',
+  :map   =>'<Space>s',
   :map_item_with_list => true,
   :items => [
     {
@@ -131,7 +131,7 @@ CommandList::register_list(
 
 CommandList::register_list(
   :name  => 'Git',
-  :map   =>'<LEADER>g',
+  :map   =>'<Space>g',
   :map_item_with_list => true,
   :items => [
     {
@@ -199,7 +199,7 @@ CommandList::register_list(
 
 CommandList::register_list(
   :name  => 'Switch Project',
-  :map   =>'<LEADER>;',
+  :map   =>'<Space>;',
   :map_item_with_list => true,
   :items => [
     {
