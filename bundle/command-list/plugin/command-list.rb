@@ -1,6 +1,6 @@
 CommandList::register_list(
   :name  => 'Align',
-  :map   =>'<LEADER>a',
+  :map   =>'<Space>a',
   :map_item_with_list => true,
   :items => [
     {
@@ -250,67 +250,67 @@ CommandList::register_list(
       :text        => 'everythi[n]g',
     },
     {
-      :function    => ":Rcontroller",
+      :function    => ":Econtroller",
       :map         => 'c',
       :text        => '[c]ontroller',
     },
     {
-      :function    => ":Rview",
+      :function    => ":Eview",
       :map         => 'v',
       :text        => '[v]iew',
     },
     {
-      :function    => ":Rlayout",
+      :function    => ":Elayout",
       :map         => 'l',
       :text        => '[l]ayout',
     },
     {
-      :function    => ":Rmodel",
+      :function    => ":Emodel",
       :map         => 'm',
       :text        => '[m]odel',
     },
     {
-      :function    => ":Renvironment",
+      :function    => ":Eenvironment",
       :map         => 'e',
       :text        => '[e]nvironment config',
     },
     {
-      :function    => ":Rspec",
+      :function    => ":Espec",
       :map         => 's',
       :text        => '[s]spec',
     },
     {
-      :function    => ":Rhelper",
+      :function    => ":Ehelper",
       :map         => 'h',
       :text        => '[h]elper',
     },
     {
-      :function    => ":Rstylesheet",
+      :function    => ":Estylesheet",
       :map         => 'y',
       :text        => 'st[y]lesheet',
     },
     {
-      :function    => ":Rmigration",
+      :function    => ":Emigration",
       :map         => 'i',
       :text        => 'm[i]gration',
     },
     {
-      :function    => ":Rtask",
+      :function    => ":Etask",
       :map         => 't',
       :text        => '[t]ask',
     },
     {
-      :function    => ":Rjavascript",
+      :function    => ":Ejavascript",
       :map         => 'j',
       :text        => '[j]avascript',
     },
     {
-      :function    => ":Rfixtures",
+      :function    => ":Efixtures",
       :map         => 'f',
       :text        => '[f]fixtures',
     },
     {
-      :function    => ":Rlocale",
+      :function    => ":Elocale",
       :map         => 'o',
       :text        => 'l[o]cale',
     },
@@ -319,31 +319,13 @@ CommandList::register_list(
 
 CommandList::register_list(
   :name  => 'Delete ...',
-  :map   =>'<LEADER>d',
+  :map   =>'<Space>d',
   :map_item_with_list => true,
   :items => [
     {
       :function    => "DeleleteInnerMostSurround()",
       :map         => 's',
       :text        => 'inner most [s]urround',
-    },
-  ]
-)
-
-CommandList::register_list(
-  :name  => 'Goto Joosy..',
-  :map   =>'gs',
-  :map_item_with_list => true,
-  :items => [
-    {
-      :function    => ":JsyPage",
-      :map         => 'p',
-      :text        => '[p]page',
-    },
-    {
-      :function    => ":JsyTemplate",
-      :map         => 't',
-      :text        => '[t]template',
     },
   ]
 )
