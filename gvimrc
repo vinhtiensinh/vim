@@ -20,7 +20,8 @@ if has("gui_macvim")
   set guifont=Courier_New:h16
   silent! set macmeta
   :macm File.Close key=<M-w>
-  :macm Tools.List\ Errors key=<M-l>
-  :macm Tools.Make key=<M-b>
+  :macm File.New\ Tab key=<nop>
+  :macm File.New\ Window key=<nop>
   :macm Edit.Select\ All key=<nop>
+  :macm Tools.List\ Errors key=<nop>
 endif
