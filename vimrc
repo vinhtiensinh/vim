@@ -164,6 +164,8 @@ let g:syntastic_enable_signs=1
 let g:syntastic_quiet_warnings=1
 let g:syntastic_disabled_filetypes = ['cucumber', 'sass', 'scss']
 
+set rtp+=/usr/local/opt/fzf
+
 " disable lighthouse if on terminal
 if !has('gui_running')
   autocmd VimEnter * call ToggleDisableEnableMiniBufExplorer()
